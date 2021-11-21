@@ -40,7 +40,15 @@ module.exports = {
       "en": "Life without regret, we can only do our best to not to regret."
     }
   ],
-
+  "covers": [
+    'https://pan.zealsay.com/zealsay/cover/7.jpg',
+    'https://pan.zealsay.com/zealsay/cover/1.jpg',
+    'https://pan.zealsay.com/zealsay/cover/2.jpg',
+    'https://pan.zealsay.com/zealsay/cover/3.jpg',
+    'https://pan.zealsay.com/zealsay/cover/4.jpg',
+    'https://pan.zealsay.com/zealsay/cover/5.jpg',
+    'https://pan.zealsay.com/zealsay/cover/6.jpg'
+  ],
   head,
   plugins,
   themeConfig,

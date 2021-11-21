@@ -341,19 +341,21 @@ export default {
   .banner
     width 100%
     min-height 450px
+    height 100vh // 全屏
     margin-top $navbarHeight
     color $bannerTextColor
     position relative
     overflow hidden
     .banner-conent
       max-width $homePageWidth
+      height 100vh // 全屏
       margin 0px auto
       position relative
       z-index 1
       overflow hidden
       .hero
         text-align center
-        margin-top 3rem
+        margin-top 20rem // 文字高度
         img
           max-width 100%
           max-height 240px

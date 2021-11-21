@@ -7,7 +7,7 @@ export default () => {
         }
         function n() {
             var t = "function" == typeof e.onclick && e.onclick;
-            
+
             e.onclick = function(e) {
               // 过滤指定元素
               let mark = true;
@@ -16,7 +16,7 @@ export default () => {
                   typeof item.className === 'string' && item.className.indexOf(EXCLUDECLASS) > -1 ? mark = false : ''
                 }
               })
-              
+
               if(mark) {
                 t && t(),
                 o(e)

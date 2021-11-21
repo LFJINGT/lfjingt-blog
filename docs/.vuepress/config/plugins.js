@@ -72,12 +72,12 @@ module.exports = [
       },
     },
   ],
-  [
-    'vuepress-plugin-baidu-tongji', // 百度统计
-    {
-      hm: '503f098e7e5b3a5b5d8c5fc2938af002',
-    },
-  ],
+  // [
+  //   'vuepress-plugin-baidu-tongji', // 百度统计
+  //   {
+  //     hm: '503f098e7e5b3a5b5d8c5fc2938af002',
+  //   },
+  // ],
   [
     'vuepress-plugin-comment', // 评论
     {
@@ -106,5 +106,82 @@ module.exports = [
         return dayjs(timestamp).format('YYYY/MM/DD, HH:mm:ss')
       },
     },
+  ],
+  // [
+  //   "ribbon", //添加一条彩带
+  //   {
+  //      size: 90, // 彩带的宽度，默认为 90
+  //      opacity: 0.8, // 彩带的不透明度，默认为 0.3
+  //      zIndex: -2 // 彩带的 z-index 属性，默认值为 -1
+  //   }
+  // ],
+  [
+    "dynamic-title", //添加动态标题
+    {
+        showIcon: "/img/favicon.ico",
+        showText: "(/≧▽≦/)咦！又好了！",
+        hideIcon: "/img/logo.png",
+        hideText: "(●—●)喔哟，崩溃啦！",
+        recoverTime: 2000
+    }
+  ],
+  '@vuepress/nprogress',// 进度条
+  ["cursor-effects",{}],// 鼠标动效
+  [
+    "meting",
+    {
+      auto: "https://music.163.com/#/playlist?id=6760375947&userid=438400047",
+      meting: {
+        server: "netease", // netease:网易云，tencent:qq音乐，xiami:虾米音乐
+        type: "playlist",
+        mid: "6760375947", //歌单或音乐id
+      },
+      aplayer: {
+        autoplay: true,
+        mini: true,
+        theme: '#282c34',
+      },
+      mobile: {
+        cover: false,
+        lrc: false
+      }
+    }
+  ],
+  [
+      // 添加樱花特效
+    "sakura", {
+      num: 20,  // 默认数量
+      show: true, //  是否显示
+      zIndex: -1,   // 层级
+      img: {
+        replace: false,  // false 默认图 true 换图 需要填写httpUrl地址
+        httpUrl: '...'     // 绝对路径
+      }
+    },
+  ],
+  [
+    'vuepress-plugin-helper-live2d', { // 添加一个2D的看板娘
+      // 是否开启控制台日志打印(default: false)
+      log: false,
+      live2d: {
+        // 是否启用(关闭请设置为false)(default: true)
+        enable: true,
+        // 模型名称(default: hibiki)
+        model: 'koharu',
+        display: {
+          position: "right", // 显示位置：left/right(default: 'right')
+          width: 135, // 模型的长度(default: 135)
+          height: 300, // 模型的高度(default: 300)
+          hOffset: 65, //  水平偏移(default: 65)
+          vOffset: 0, //  垂直偏移(default: 0)
+        },
+        mobile: {
+          show: false // 是否在移动设备上显示(default: false)
+        },
+        react: {
+          opacity: 0.8 // 模型透明度(default: 0.8)
+        }
+      }
+    }
   ],
 ]

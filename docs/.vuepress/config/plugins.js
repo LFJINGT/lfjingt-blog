@@ -33,7 +33,7 @@ module.exports = [
         },
         {
           title: '通过百度搜索本站的',
-          frontUrl: 'https://www.baidu.com/s?wd=site%3Axugaoyi.com%20',
+          frontUrl: 'https://www.baidu.com/s?wd=site%3ALFJINGT.com%20',
         },
       ],
     },
@@ -83,11 +83,11 @@ module.exports = [
     {
       choosen: 'gitalk',
       options: {
-        clientID: 'a6e1355287947096b88b',
-        clientSecret: 'f0e77d070fabfcd5af95bebb82b2d574d7248d71',
-        repo: 'blog-gitalk-comment', // GitHub 仓库
-        owner: 'xugaoyi', // GitHub仓库所有者
-        admin: ['xugaoyi'], // 对仓库有写权限的人
+        clientID: 'f9e9cb3e14ef7b1f5749',
+        clientSecret: '6ff3913050aaf72fc4a8c4e829ce5d6357b2bd10',
+        repo: 'blog', // GitHub 仓库
+        owner: 'LFJINGT', // GitHub仓库所有者
+        admin: ['LFJINGT'], // 对仓库有写权限的人
         // distractionFreeMode: true,
         pagerDirection: 'last', // 'first'正序 | 'last'倒序
         id: '<%- (frontmatter.permalink || frontmatter.to.path).slice(-16) %>', //  页面的唯一标识,长度不能超过50

@@ -52,7 +52,7 @@ module.exports = {
   },
   blogger: {
     // 博主信息，显示在首页侧边栏
-    avatar: '/img/author-img.jpg',
+    avatar: '/img/author_img.jpg',
     name: 'LFJINGT',
     slogan: '追着蒲公英奔跑的小孩',
   },

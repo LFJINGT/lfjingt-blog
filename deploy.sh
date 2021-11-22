@@ -10,14 +10,14 @@ npm run build
 cd docs/.vuepress/dist
 
 # deploy to github pages
-echo 'b.LFJINGT.com' > CNAME
+# echo 'b.LFJINGT.com' > CNAME
 
 if [ -z "$GITHUB_TOKEN" ]; then
   msg='deploy'
-  githubUrl=git@github.com:LFJINGT/blog.git
+  githubUrl=git@github.com:LFJINGT/lfjingt-blog.git
 else
   msg='来自github actions的自动部署'
-  githubUrl=https://LFJINGT:${GITHUB_TOKEN}@github.com/LFJINGT/blog.git
+  githubUrl=https://LFJINGT:${GITHUB_TOKEN}@github.com/LFJINGT/lfjingt-blog.git
   git config --global user.name "LFJINGT"
   git config --global user.email "2360870828@qq.com"
 fi
@@ -25,6 +25,9 @@ git init
 git add -A
 git commit -m "${msg}"
 git push -f $githubUrl master:gh-pages # 推送到github gh-pages分支
+
+# git commit -m "deploy"
+# git push -f git@github.com:LFJINGT/lfjingt-blog.git master:gh-pages # 推送到github gh-pages分支
 
 # deploy to coding pages
 # echo 'www.LFJINGT.com\nLFJINGT.com' > CNAME  # 自定义域名

@@ -67,7 +67,7 @@ module.exports = {
       </script>`,
   pageT:
     `<!-- 固定100% * 90px可显示，max-height:90px未见显示-->
-     <ins class="adsbygoogle"
+      <ins class="adsbygoogle"
           style="display:inline-block;width:100%;max-height:90px"
           data-ad-client="ca-pub-7828333725993554"
           data-ad-slot="6625304284"></ins>

@@ -43,7 +43,7 @@ module.exports = [
         {
           title: "在360中搜索",
           frontUrl: "https://www.so.com/s?q="
-        }
+        },
         {
           title: '通过百度搜索本站的',
           frontUrl: 'https://www.baidu.com/s?wd=site%3ALFJINGT.com%20',

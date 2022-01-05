@@ -5,8 +5,47 @@ heroText: LFJIGNT's blog
 tagline: 积跬步以至千里，致敬每个爱学习的你。
 # actionText: 立刻进入 →
 # actionLink: /web/
-bannerBg: /img/tbg/tbg7.jpg
-         # auto => 网格纹背景(有bodyBgImg时无背景)，默认 | none => 无 | '大图地址' | background: 自定义背景样式       提示：如发现文本颜色不适应你的背景时可以到palette.styl修改$bannerTextColor变量
+# bannerBg: /img/tbg/tbg7.jpg
+#          # auto => 网格纹背景(有bodyBgImg时无背景)，默认 | none => 无 | '大图地址' | background: 自定义背景样式       提示：如发现文本颜色不适应你的背景时可以到palette.styl修改$bannerTextColor变量
+bannerBg:
+      model: random # auto => 网格纹背景(有bodyBgImg时无背景)，默认 | none => 无 | standard '大图地址' | background: 自定义背景样式  |  random '大图地址（数组）'    提示：如发现文本颜色不适应你的背景时可以到palette.styl修改$bannerTextColor变量
+
+      imgUrl: [
+        'https://cdn.jsdelivr.net/gh/LFJINGT/image-hosting/bg01.jpg',
+        'https://cdn.jsdelivr.net/gh/LFJINGT/image-hosting/bg02.jpg',
+        'https://cdn.jsdelivr.net/gh/LFJINGT/image-hosting/bg03.jpg',
+        'https://cdn.jsdelivr.net/gh/LFJINGT/image-hosting/bg04.jpg',
+        'https://cdn.jsdelivr.net/gh/LFJINGT/image-hosting/bg05.jpg',
+        'https://cdn.jsdelivr.net/gh/LFJINGT/image-hosting/bg06.jpg',
+        'https://cdn.jsdelivr.net/gh/LFJINGT/image-hosting/bg07.jpg',
+        'https://cdn.jsdelivr.net/gh/LFJINGT/image-hosting/bg08.jpg',
+        'https://cdn.jsdelivr.net/gh/LFJINGT/image-hosting/bg09.jpg',
+        'https://cdn.jsdelivr.net/gh/LFJINGT/image-hosting/bg10.jpg',
+        'https://cdn.jsdelivr.net/gh/LFJINGT/image-hosting/bg11.jpg',
+        'https://cdn.jsdelivr.net/gh/LFJINGT/image-hosting/bg12.jpg',
+        'https://cdn.jsdelivr.net/gh/LFJINGT/image-hosting/bg13.jpg',
+        'https://cdn.jsdelivr.net/gh/LFJINGT/image-hosting/bg14.jpg',
+        'https://cdn.jsdelivr.net/gh/LFJINGT/image-hosting/bg15.jpg',
+        'https://cdn.jsdelivr.net/gh/LFJINGT/image-hosting/bg16.jpg',
+        'https://cdn.jsdelivr.net/gh/LFJINGT/image-hosting/bg17.jpg',
+        'https://cdn.jsdelivr.net/gh/LFJINGT/image-hosting/bg18.jpg',
+        'https://cdn.jsdelivr.net/gh/LFJINGT/image-hosting/bg19.jpg',
+        'https://cdn.jsdelivr.net/gh/LFJINGT/image-hosting/bg20.jpg',
+        'https://cdn.jsdelivr.net/gh/LFJINGT/image-hosting/bg21.jpg',
+        'https://cdn.jsdelivr.net/gh/LFJINGT/image-hosting/bg22.jpg',
+        'https://cdn.jsdelivr.net/gh/LFJINGT/image-hosting/bg23.jpg',
+        'https://cdn.jsdelivr.net/gh/LFJINGT/image-hosting/bg24.jpg',
+        'https://cdn.jsdelivr.net/gh/LFJINGT/image-hosting/bg25.jpg',
+        'https://cdn.jsdelivr.net/gh/LFJINGT/image-hosting/bg26.jpg',
+        'https://cdn.jsdelivr.net/gh/LFJINGT/image-hosting/bg27.jpg',
+        'https://cdn.jsdelivr.net/gh/LFJINGT/image-hosting/bg28.jpg',
+        'https://cdn.jsdelivr.net/gh/LFJINGT/image-hosting/bg29.jpg',
+        'https://cdn.jsdelivr.net/gh/LFJINGT/image-hosting/bg30.jpg',
+        'https://cdn.jsdelivr.net/gh/LFJINGT/image-hosting/bg31.jpg',
+        'https://cdn.jsdelivr.net/gh/LFJINGT/image-hosting/bg32.jpg',
+        'https://cdn.jsdelivr.net/gh/LFJINGT/image-hosting/bg33.jpg',
+
+      ]
 
 features: # 可选的
   - title: 前端
@@ -144,7 +183,7 @@ export default {
       this.scrollFn();
     })
   },
-
+  // FIXME: 移动端下，跳转距离存在问题
   methods: {
     scrollFn() {
       const windowH = document.getElementsByClassName('banner-conent')[0].clientHeight; // 获取窗口高度

@@ -1,6 +1,7 @@
 # npm
 package-lock.json
 node_modules
+pnpm-lock.yaml
 
 # yarn
 yarn.lock
